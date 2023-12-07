@@ -1,18 +1,16 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Login from './components/Login';
-import Signup from './components/SignUp';
+import {Link} from 'react-router-dom';
+import { Route} from 'react-router-dom';
+import Login from './components/login';
+import SignUp from './components/SignUp';
+import Recovery from './components/Recovery';
 
 function App() {
   return (
-    <Router>
-    <div className="App">
-     <Switch>
-        <Route exact path="./components/Login.jsx" component={Login} />
-        <Route exact path="/src/components/SignUp.jsx" component={Signup} />
-     </Switch>
-    </div>
-    </Router>
+  //  <Login />
+  // <SignUp />
+  <Recovery />
   );
 }
 

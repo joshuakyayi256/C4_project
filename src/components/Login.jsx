@@ -1,5 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 
 // src/components/Login.js
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -28,6 +30,7 @@ const Login = () => {
         <div className="max-w-xl w-full p-8 space-y-7">
 
           <h2 className="text-5xl text-center font-semibold text-gray-800">Login</h2>
+          
           <p className="text-lg text-center">Get started with Shortly</p>
 
           <form onSubmit={handleSubmit}>
@@ -61,9 +64,9 @@ const Login = () => {
               />
 
               <div className="mt-4">
-                <a href="#" className="text-red-600 hover:underline">
+                <Link to="./Recovery.js" className="text-red-600 hover:underline">
                 Forgot Password?
-                 </a>
+                 </Link>
               </div>
 
             </div>
